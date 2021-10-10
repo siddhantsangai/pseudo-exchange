@@ -2,11 +2,20 @@ package com.hackerearth.dao;
 
 public class Order {
     String tokenId;
+    String orderId;
     String symbol;
     String side;
     int quantity;
     double price;
     long timeStamp;
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
+    }
 
     public String getTokenId() {
         return tokenId;
@@ -60,6 +69,7 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "tokenId='" + tokenId + '\'' +
+                ", orderId='" + orderId + '\'' +
                 ", symbol='" + symbol + '\'' +
                 ", side='" + side + '\'' +
                 ", quantity=" + quantity +
@@ -67,4 +77,5 @@ public class Order {
                 ", timeStamp=" + timeStamp +
                 '}';
     }
+
 }

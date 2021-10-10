@@ -1,4 +1,4 @@
-package com.hackerearth.exchange;
+package com.hackerearth.factory;
 
 import com.hackerearth.dao.Token;
 import org.springframework.stereotype.Component;

@@ -1,11 +1,10 @@
 package com.hackerearth.dao;
 
-import java.util.List;
 import java.util.Map;
 
 public class Portfolio {
     private String tokenId;
-    private List<Order> orders;
+    private Map<String, Order> orders;
     private Map<String, Integer> stockHoldings;
 
     public String getTokenId() {
@@ -16,11 +15,11 @@ public class Portfolio {
         this.tokenId = tokenId;
     }
 
-    public List<Order> getOrders() {
+    public Map<String, Order> getOrders() {
         return orders;
     }
 
-    public void setOrders(List<Order> orders) {
+    public void setOrders(Map<String, Order> orders) {
         this.orders = orders;
     }
 
